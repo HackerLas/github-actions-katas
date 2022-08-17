@@ -13,7 +13,7 @@ jobs:
           name: Repo
           path: .
   Build:
-    needs: [Clone-down]
+    needs: Clone-down
     runs-on: ubuntu-latest
     container: gradle:6-jdk11
     steps:
